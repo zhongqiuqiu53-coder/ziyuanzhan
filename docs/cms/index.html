@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>接入 CMS - 三步搞定</title>
+<style>
+  :root{--bg:#0f172a;--card:#1e293b;--line:#334155;--ink:#f1f5f9;--muted:#94a3b8;--accent:#38bdf8;--ok:#4ade80;--warn:#fbbf24}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans SC",sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;padding:16px 16px 60px;padding-bottom:calc(60px + env(safe-area-inset-bottom))}
+  .wrap{max-width:760px;margin:0 auto}
+  h1{font-size:1.5rem;font-weight:800;color:var(--accent);text-align:center;margin:24px 0 6px}
+  .sub{text-align:center;color:var(--muted);font-size:.9rem;margin-bottom:22px}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:16px}
+  .url{background:#0b1220;border:1px dashed var(--line);border-radius:10px;padding:14px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.8rem;word-break:break-all;color:#7dd3fc;line-height:1.5}
+  .btn{display:block;width:100%;text-align:center;background:var(--accent);color:#0b1220;font-weight:800;font-size:1.05rem;padding:16px;border:none;border-radius:12px;cursor:pointer;margin-top:12px;font-family:inherit}
+  .btn:active{transform:scale(.98)}
+  .btn.ghost{background:transparent;color:var(--accent);border:2px solid var(--accent);font-weight:700;font-size:.95rem;padding:13px}
+  .btn.ok{background:var(--ok)}
+  .step{display:flex;gap:14px;margin-bottom:18px}
+  .num{flex:0 0 34px;height:34px;border-radius:50%;background:var(--accent);color:#0b1220;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:1.05rem}
+  .step h3{font-size:1rem;margin-bottom:2px}
+  .step p{color:var(--muted);font-size:.9rem}
+  .step code{background:#0b1220;padding:2px 7px;border-radius:5px;font-size:.85em;color:#7dd3fc;word-break:break-all}
+  ul.tip{padding-left:20px;color:var(--muted);font-size:.9rem}
+  ul.tip li{margin-bottom:6px}
+  .tag{display:inline-block;font-size:.72rem;padding:2px 8px;border-radius:5px;background:rgba(56,189,248,.15);color:var(--accent);font-weight:700;vertical-align:middle}
+  .note{border-left:3px solid var(--warn);padding:10px 14px;background:rgba(251,191,24,.08);border-radius:0 8px 8px 0;color:#fde68a;font-size:.88rem;margin-top:10px}
+  .foot{text-align:center;color:var(--muted);font-size:.8rem;margin-top:30px}
+  a{color:var(--accent)}
+  .copied{text-align:center;color:var(--ok);font-weight:700;font-size:.9rem;margin-top:10px;display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>接 CMS，只要这 3 步</h1>
+  <p class="sub">下面这个地址就是全部。别的都不用管。</p>
+
+  <div class="box">
+    <div style="font-size:.85rem;color:var(--muted);margin-bottom:8px">① 把这个地址填进 CMS 的「资源库地址」栏</div>
+    <div class="url" id="u">https://zhongqiuqiu53-coder.github.io/ziyuanzhan/api.php/provide/vod/</div>
+    <button class="btn" id="copy">复制接口地址</button>
+    <div class="copied" id="ok">✓ 已复制，去 CMS 粘贴吧</div>
+  </div>
+
+  <div class="box">
+    <div class="step">
+      <div class="num">1</div>
+      <div>
+        <h3>先测一下通不通</h3>
+        <p>在 CMS 的「JSON接口在线解析/测试」面板里，接口地址填上面那个，点 <code>测试接口</code>。看到 <b style="color:var(--ok)">HTTP 200</b> 和 code / msg / page 这些字段，就是通的。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="num">2</div>
+      <div>
+        <h3>保存成采集源</h3>
+        <p>进 <code>采集 → 自定义资源库</code>（或 <code>接口管理</code>）→ 新增 → 资源库地址粘贴上面那串 → 接口类型选 <code>JSON</code> → 保存。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="num">3</div>
+      <div>
+        <h3>点采集</h3>
+        <p>回到列表，点刚才那个采集源旁边的「采集」按钮，条目就进来了。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="box">
+    <h3 style="font-size:1rem;margin-bottom:10px">手滑复制不上？点下面这个也行</h3>
+    <button class="btn ghost" onclick="window.open('https://zhongqiuqiu53-coder.github.io/ziyuanzhan/api.php/provide/vod/','_blank')">在新标签打开接口看看长什么样</button>
+    <p style="color:var(--muted);font-size:.85rem;margin-top:10px">能打开并看到一大坨 JSON，说明接口是好的，CMS 那边也能用。</p>
+  </div>
+
+  <div class="box">
+    <h3 style="font-size:1rem;margin-bottom:10px">导进去的是什么 <span class="tag">先看一眼</span></h3>
+    <ul class="tip">
+      <li>每一「条」是 <b>一个资源站</b>（比如「新极品资源站」），不是影视作品。</li>
+      <li>条目里带状态、响应时间、评分、资源数量，点标题能跳到那个站。</li>
+      <li>适合拿来做「资源站导航」栏目。<b>如果你要的是影视内容</b>，看下面这段。</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h3 style="font-size:1rem;margin-bottom:10px">你真正要影视内容的话</h3>
+    <p style="color:var(--muted);font-size:.9rem">清单里每个资源站<strong style="color:var(--ink)">自己</strong>的采集接口地址都在这。打开 Excel，把「API采集地址」那一列一条条填进 CMS 的「采集 → 添加采集资源」里，就能采到剧。</p>
+    <button class="btn ghost" onclick="window.open('https://zhongqiuqiu53-coder.github.io/ziyuanzhan/data/apis.csv','_blank')">下载采集源清单 (CSV)</button>
+    <p style="color:var(--muted);font-size:.85rem;margin-top:10px">清单里还有状态和响应时间，<b>先接响应快的</b>。离线站别接。</p>
+  </div>
+
+  <div class="box">
+    <h3 style="font-size:1rem;margin-bottom:10px">CMS 提示「无数据」？</h3>
+    <ul class="tip">
+      <li>先确认接口类型选的是 <code>JSON</code> 不是 <code>XML</code>（XML 的话地址换成 <code>.../api.php/provide/vod/at/xml/</code>）。</li>
+      <li>确认地址<strong style="color:var(--ink)">末尾有斜杠</strong>。</li>
+      <li>「JSON接口在线解析/测试」面板如果显示 HTTP 200 但字段是空的，说明地址填错了，重新复制一次。</li>
+    </ul>
+    <div class="note">
+      静态部署有个已知限制：<code>?ac=detail</code> 取不到单条详情（会返回全部）。<br>
+      如果你的 CMS 必须逐条抓详情，用这个 PHP 文件（上传到你的主机即可）：
+      <a href="https://github.com/zhongqiuqiu53-coder/ziyuanzhan/raw/main/cms_api.php" target="_blank" rel="noopener">下载 cms_api.php</a>
+    </div>
+  </div>
+
+  <p class="foot">数据每 6 小时自动更新一次 · <a href="../">回到监控面板</a></p>
+</div>
+
+<script>
+document.getElementById('copy').addEventListener('click', function () {
+  var text = document.getElementById('u').innerText.trim();
+  var done = function () {
+    var ok = document.getElementById('ok');
+    ok.style.display = 'block';
+    document.getElementById('copy').textContent = '再点一次复制';
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(done).catch(fallback);
+  } else {
+    fallback();
+  }
+  function fallback () {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); done(); } catch (e) {}
+    document.body.removeChild(ta);
+  }
+});
+</script>
+</body>
+</html>
