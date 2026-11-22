@@ -98,6 +98,9 @@
       <li>「JSON接口在线解析/测试」面板如果显示 HTTP 200 但字段是空的，说明地址填错了，重新复制一次。</li>
     </ul>
     <div class="note">
+      <b>用海洋CMS 的话</b>，把地址换成这一串（海洋CMS 的原生路径）：<br>
+      <code style="color:#7dd3fc">https://zhongqiuqiu53-coder.github.io/ziyuanzhan/api.php/seaxml/vod/</code><br>
+      苹果CMS V10 / 飞鸟CMS 就用上面那个 provide 的地址。<br><br>
       静态部署有个已知限制：<code>?ac=detail</code> 取不到单条详情（会返回全部）。<br>
       如果你的 CMS 必须逐条抓详情，用这个 PHP 文件（上传到你的主机即可）：
       <a href="https://github.com/zhongqiuqiu53-coder/ziyuanzhan/raw/main/cms_api.php" target="_blank" rel="noopener">下载 cms_api.php</a>

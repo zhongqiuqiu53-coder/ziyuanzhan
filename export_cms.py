@@ -245,21 +245,32 @@ def build_xml(vod):
 def write_endpoints(vod):
     """在 docs/ 下生成 CMS 期望的接口路径。
 
-    GitHub Pages 是纯静态的，用目录 + index.html 镜像出苹果CMS 的路径形态：
+    GitHub Pages 是纯静态的，用目录 + index.html 镜像出各 CMS 的原生路径形态：
+
+    苹果CMS V10 / 飞鸟CMS / 赞片CMS（provide 家族）
         /api.php/provide/vod/          JSON 列表
         /api.php/provide/vod/at/json/  JSON 列表（带筛选形态）
         /api.php/provide/vod/at/xml/   XML 列表
         /api.php/provide/vod.json      JSON（真实 application/json Content-Type）
+
+    海洋CMS（seaxml 家族）
+        /api.php/seaxml/vod/           JSON 列表
+        /api.php/seaxml/vod/at/xml/    XML 列表
+
     采集器追加的 ?ac=list / ?wd= 等 query 会被静态托管忽略，取到的是同一份数据。
     """
-    root = os.path.join(BASE_DIR, 'docs', 'api.php', 'provide', 'vod')
+    base = os.path.join(BASE_DIR, 'docs', 'api.php')
     payload = json.dumps(vod, ensure_ascii=False, indent=2)
+    xml = build_xml(vod)
 
     targets = [
-        (os.path.join(root, 'index.html'), payload),
-        (os.path.join(root, 'at', 'json', 'index.html'), payload),
-        (os.path.join(root, 'at', 'xml', 'index.html'), build_xml(vod)),
-        (os.path.join(BASE_DIR, 'docs', 'api.php', 'provide', 'vod.json'), payload),
+        (os.path.join(base, 'provide', 'vod', 'index.html'), payload),
+        (os.path.join(base, 'provide', 'vod', 'at', 'json', 'index.html'), payload),
+        (os.path.join(base, 'provide', 'vod', 'at', 'xml', 'index.html'), xml),
+        (os.path.join(base, 'provide', 'vod.json'), payload),
+        (os.path.join(base, 'seaxml', 'vod', 'index.html'), payload),
+        (os.path.join(base, 'seaxml', 'vod', 'at', 'xml', 'index.html'), xml),
+        (os.path.join(base, 'seaxml', 'vod', 'at', 'json', 'index.html'), payload),
     ]
     for path, content in targets:
         os.makedirs(os.path.dirname(path), exist_ok=True)
