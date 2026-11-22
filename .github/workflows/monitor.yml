@@ -19,6 +19,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  actions: read
 
 concurrency:
   group: "monitor-deploy"
@@ -68,6 +69,11 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs/
+
+      # 刚上传的 artifact 有时还没进 artifacts 列表，deploy-pages 会报
+      # "Found 0 artifact(s)"。这里等一下让它可查。
+      - name: Wait for artifact to become listable
+        run: sleep 30
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
