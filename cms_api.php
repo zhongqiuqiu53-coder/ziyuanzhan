@@ -55,21 +55,32 @@ function zyz_fetch_source()
         $ch = curl_init(SOURCE_URL);
         curl_setopt_array($ch, array(
             CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_TIMEOUT => 20,
-            CURLOPT_CONNECTTIMEOUT => 10,
+            CURLOPT_TIMEOUT => 12,
+            CURLOPT_CONNECTTIMEOUT => 6,
             CURLOPT_FOLLOWLOCATION => true,
             CURLOPT_USERAGENT => 'ziyuanzhan-cms-bridge/1.0',
         ));
         $body = curl_exec($ch);
+        $curlErr = curl_error($ch);
         curl_close($ch);
         if ($body !== false && $body !== null) {
             $raw = $body;
+        } else {
+            $GLOBALS['zyz_last_error'] = 'curl: ' . $curlErr;
         }
     }
+    // curl 不可用 / SSL 证书链缺失时，用 file_get_contents 兜底（同样限时）
     if ($raw === null && ini_get('allow_url_fopen')) {
-        $body = @file_get_contents(SOURCE_URL);
+        $ctx = stream_context_create(array(
+            'http' => array('timeout' => 12, 'user_agent' => 'ziyuanzhan-cms-bridge/1.0'),
+            'ssl'  => array('verify_peer' => true, 'verify_peer_name' => true),
+        ));
+        $body = @file_get_contents(SOURCE_URL, false, $ctx);
         if ($body !== false) {
             $raw = $body;
+        } else {
+            $err = error_get_last();
+            $GLOBALS['zyz_last_error'] = 'file_get_contents: ' . ($err ? $err['message'] : 'unknown');
         }
     }
 
@@ -201,10 +212,13 @@ function zyz_to_xml($data)
  */
 $data = zyz_fetch_source();
 if ($data === null) {
+    $why = isset($GLOBALS['zyz_last_error']) ? $GLOBALS['zyz_last_error'] : '未知原因';
     header('Content-Type: application/json; charset=utf-8');
+    header('Access-Control-Allow-Origin: *');
     echo json_encode(array(
         'code' => 0,
-        'msg'  => '数据源拉取失败，请检查服务器是否能访问 ' . SOURCE_URL,
+        'msg'  => '数据源拉取失败（' . $why . '）。请确认服务器能访问 ' . SOURCE_URL
+                 . '，且 allow_url_fopen 或 cURL 至少开启一个。',
         'list' => array(),
     ), JSON_UNESCAPED_UNICODE);
     exit;

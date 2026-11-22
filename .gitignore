@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+
+# cms_api.php 的本地缓存
+.zyz_vod_cache.json

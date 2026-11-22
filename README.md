@@ -49,7 +49,11 @@ CMS 的「采集 → 自定义资源库 / 接口管理」需要的是**苹果CMS
 
 静态托管的边界：`?ac=detail&ids=xxx` 返回全量列表而非单条详情，`wd`/`t`/`pg` 服务端筛选不生效。
 需要完整动态行为时，把 `cms_api.php` 上传到你的 PHP 主机，
-资源库地址改成 `https://你的域名/zy/api.php/provide/vod/`。
+资源库地址改成 `https://你的域名/zy/api.php/provide/vod/`
+（纯 nginx 用 `https://你的域名/zy/api.php` 即可）。
+
+`cms_api.php` 已在 PHP 8.2.36 上实测通过：列表 / 详情 / 搜索 / 分页 / JSON / XML 六种形态全部正常，
+外网故障时自动降级到过期缓存，拉不到数据会返回带具体原因的错误而不是空列表。
 
 各资源站自己的真实影视采集接口在 `apis.csv` / `apis.json` 里，可批量录入 CMS。
 详见 [使用指南.md](使用指南.md)。
