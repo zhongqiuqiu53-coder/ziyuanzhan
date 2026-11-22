@@ -205,6 +205,68 @@ def build_vod(entries, timestamp):
     }
 
 
+def cdata(text):
+    """XML CDATA 安全转义。"""
+    return str(text if text is not None else '').replace(']]>', ']]]]><![CDATA[>')
+
+
+def build_xml(vod):
+    """苹果CMS V10 XML 采集格式。"""
+    out = ['<?xml version="1.0" encoding="utf-8"?>', '<rss version="5.0">']
+    out.append('<list page="%s" pagecount="%s" pagesize="%s" recordcount="%s">'
+               % (vod['page'], vod['pagecount'], vod['limit'], vod['total']))
+    for v in vod['list']:
+        play = v.get('vod_play_url') or ''
+        if play and not play.endswith('|'):
+            play += '|'
+        out.append('<video>')
+        out.append('<last>%s</last>' % v.get('vod_time', ''))
+        out.append('<id>%s</id>' % v.get('vod_id', ''))
+        out.append('<tid>%s</tid>' % v.get('type_id', ''))
+        out.append('<name><![CDATA[%s]]></name>' % cdata(v.get('vod_name')))
+        out.append('<type>%s</type>' % v.get('type_name', ''))
+        out.append('<dt>%s</dt>' % v.get('vod_play_from', ''))
+        out.append('<note><![CDATA[%s]]></note>' % cdata(v.get('vod_remarks')))
+        out.append('<dl><dd from="%s"><![CDATA[%s]]></dd></dl>'
+                   % (v.get('vod_play_from', ''), cdata(play)))
+        out.append('<des><![CDATA[%s]]></des>' % cdata(v.get('vod_content')))
+        out.append('<vlink><![CDATA[%s]]></vlink>' % cdata(v.get('vod_sub')))
+        out.append('<plink><![CDATA[%s]]></plink>' % cdata(v.get('vod_play_url')))
+        out.append('</video>')
+    out.append('</list>')
+    out.append('<class>')
+    for c in vod.get('class') or []:
+        out.append('<ty id="%s">%s</ty>' % (c.get('type_id'), c.get('type_name')))
+    out.append('</class>')
+    out.append('</rss>')
+    return '\n'.join(out) + '\n'
+
+
+def write_endpoints(vod):
+    """在 docs/ 下生成 CMS 期望的接口路径。
+
+    GitHub Pages 是纯静态的，用目录 + index.html 镜像出苹果CMS 的路径形态：
+        /api.php/provide/vod/          JSON 列表
+        /api.php/provide/vod/at/json/  JSON 列表（带筛选形态）
+        /api.php/provide/vod/at/xml/   XML 列表
+        /api.php/provide/vod.json      JSON（真实 application/json Content-Type）
+    采集器追加的 ?ac=list / ?wd= 等 query 会被静态托管忽略，取到的是同一份数据。
+    """
+    root = os.path.join(BASE_DIR, 'docs', 'api.php', 'provide', 'vod')
+    payload = json.dumps(vod, ensure_ascii=False, indent=2)
+
+    targets = [
+        (os.path.join(root, 'index.html'), payload),
+        (os.path.join(root, 'at', 'json', 'index.html'), payload),
+        (os.path.join(root, 'at', 'xml', 'index.html'), build_xml(vod)),
+        (os.path.join(BASE_DIR, 'docs', 'api.php', 'provide', 'vod.json'), payload),
+    ]
+    for path, content in targets:
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, 'w', encoding='utf-8') as f:
+            f.write(content)
+    return [os.path.relpath(p, BASE_DIR).replace('\\', '/') for p, _ in targets]
+
 def build_apis(entries, timestamp):
     alive = [e for e in entries if e['health'].get('is_alive')]
     rows = []
@@ -285,11 +347,15 @@ def main():
         json.dump(apis, f, ensure_ascii=False, indent=2)
     write_csv(apis)
 
+    paths = write_endpoints(vod)
+
     alive = apis['online']
     print('[INFO] CMS 采集接口: docs/data/vod.json  (%d 条)' % vod['total'])
     print('[INFO] 仅在线版:     docs/data/vod-online.json (%d 条)' % alive)
     print('[INFO] 采集源清单:   docs/data/apis.json (%d 条, 在线 %d)' % (apis['total'], alive))
     print('[INFO] 采集源表格:   docs/data/apis.csv')
+    for p in paths:
+        print('[INFO] 接口路径:     %s' % p)
     print('[DONE] 完成')
     return 0
 
