@@ -10,6 +10,7 @@ on:
       - main
     paths:
       - 'monitor.py'
+      - 'export_cms.py'
       - 'requirements.txt'
       - 'docs/data/sources.json'
 
@@ -41,6 +42,10 @@ jobs:
       - name: Run monitor script
         run: |
           python monitor.py
+
+      - name: Export CMS collection formats
+        run: |
+          python export_cms.py
 
       - name: Clean old history files
         run: |
