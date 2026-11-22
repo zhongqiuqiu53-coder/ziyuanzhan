@@ -32,20 +32,24 @@ GitHub Actions (每6小时) → monitor.py → fetch ziyuanzu API → 健康检�
 
 所有 JSON 接口均带 `Access-Control-Allow-Origin: *`，浏览器可直接 `fetch`。
 
-## 接 CMS（苹果CMS V8 / maccms）
+## 接 CMS（苹果CMS V10 / 海洋CMS / maccms）
 
-`online.json` 这类自有格式**不能**直接喂给 CMS 采集器（顶层字段和条目字段都对不上，
-会 HTTP 200 但解析不出内容）。`export_cms.py` 会额外导出 maccms 标准格式：
+CMS 的「采集 → 自定义资源库 / 接口管理」需要的是**苹果CMS 标准接口路径**，
+本部署已经按这个形态对外提供，直接复制地址即可：
 
-| 字段 | maccms 标准 | 本项目导出 |
-|------|-------------|-----------|
-| 顶层 | `code/msg/page/pagecount/limit/total/list/class` | ✅ 完全一致 |
-| 条目 | `vod_id/vod_name/type_id/vod_play_url/vod_play_from` | ✅ 提供 |
+| CMS 接口类型 | 资源库地址 |
+|---|---|
+| JSON | `https://zhongqiuqiu53-coder.github.io/ziyuanzhan/api.php/provide/vod/` |
+| JSON（带筛选形态） | `.../api.php/provide/vod/at/json/` |
+| XML | `.../api.php/provide/vod/at/xml/` |
+| JSON（`application/json` 备用） | `.../api.php/provide/vod.json` |
 
-CMS 后台 → 采集管理 → 添加采集资源：
+返回体与真实 maccms 接口（`api.php/provide/vod/`）逐字段一致：
+顶层 `code/msg/page/pagecount/limit/total/list/class`，条目 `vod_id/vod_name/type_id/vod_play_url/vod_play_from` 等。
 
-- 采集地址：`https://zhongqiuqiu53-coder.github.io/ziyuanzhan/data/vod.json`
-- 资源类型（分类 ID）：`1`（可在 `export_cms.py` 顶部修改）
+静态托管的边界：`?ac=detail&ids=xxx` 返回全量列表而非单条详情，`wd`/`t`/`pg` 服务端筛选不生效。
+需要完整动态行为时，把 `cms_api.php` 上传到你的 PHP 主机，
+资源库地址改成 `https://你的域名/zy/api.php/provide/vod/`。
 
 各资源站自己的真实影视采集接口在 `apis.csv` / `apis.json` 里，可批量录入 CMS。
 详见 [使用指南.md](使用指南.md)。
