@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24 16:52:12",
+  "timestamp": "2026-11-25 01:50:53",
   "total": 74,
   "online": 62,
   "offline": 12,
@@ -7,32 +7,13 @@
   "cms_type_name": "资源站",
   "data": [
     {
-      "name": "金鹰资源站",
-      "api": "https://jyzyapi.com/provide/vod/",
-      "link": "https://jyzyapi.com",
-      "source_url": "https://www.ziyuanzu.com/source/jinyingziyuanzhan",
-      "status": "在线",
-      "status_code": 200,
-      "response_ms": 96.98,
-      "rating": 4.4,
-      "speed": "medium",
-      "resource_count": 110878,
-      "today_updates": 17,
-      "tags": [
-        "m3u8",
-        "直链",
-        "稳定"
-      ],
-      "description": "金鹰资源采集站，m3u8直链"
-    },
-    {
       "name": "速播资源站",
       "api": "https://subocj.com/api.php/provide/vod/",
       "link": "https://subocj.com",
       "source_url": "https://www.ziyuanzu.com/source/suboziyuanzhan",
       "status": "在线",
       "status_code": 403,
-      "response_ms": 100.67,
+      "response_ms": 57.1,
       "rating": 4.4,
       "speed": "medium",
       "resource_count": 110815,
@@ -51,7 +32,7 @@
       "source_url": "https://www.ziyuanzu.com/source/piaolingyingyuanziyuanzhan",
       "status": "在线",
       "status_code": 403,
-      "response_ms": 112.05,
+      "response_ms": 68.38,
       "rating": 4.4,
       "speed": "medium",
       "resource_count": 98019,
@@ -64,13 +45,88 @@
       "description": "飘零影院采集站，资源丰富"
     },
     {
+      "name": "155资源站",
+      "api": "https://155api.com/api.php/provide/vod",
+      "link": "https://155api.com",
+      "source_url": "https://www.ziyuanzu.com/source/155ziyuanzhan",
+      "status": "在线",
+      "status_code": 200,
+      "response_ms": 88.97,
+      "rating": 4.3,
+      "speed": "medium",
+      "resource_count": 183497,
+      "today_updates": 20,
+      "tags": [
+        "高清",
+        "API",
+        "极速"
+      ],
+      "description": "155资源采集站，提供影视资源API接口"
+    },
+    {
+      "name": "金鹰资源站",
+      "api": "https://jyzyapi.com/provide/vod/",
+      "link": "https://jyzyapi.com",
+      "source_url": "https://www.ziyuanzu.com/source/jinyingziyuanzhan",
+      "status": "在线",
+      "status_code": 200,
+      "response_ms": 94.07,
+      "rating": 4.4,
+      "speed": "medium",
+      "resource_count": 110878,
+      "today_updates": 17,
+      "tags": [
+        "m3u8",
+        "直链",
+        "稳定"
+      ],
+      "description": "金鹰资源采集站，m3u8直链"
+    },
+    {
+      "name": "黄色仓库资源",
+      "api": "https://hsckzy888.com/api.php/provide/vod",
+      "link": "https://hsckzy888.com",
+      "source_url": "https://www.ziyuanzu.com/source/huangsecangkuziyuan",
+      "status": "在线",
+      "status_code": 523,
+      "response_ms": 107.43,
+      "rating": 4.2,
+      "speed": "fast",
+      "resource_count": 64442,
+      "today_updates": 20,
+      "tags": [
+        "热门",
+        "精品",
+        "稳定"
+      ],
+      "description": "黄色仓库资源采集站，提供影视资源API接口"
+    },
+    {
+      "name": "豆豆资源站",
+      "api": "https://api.douapi.cc/api.php/provide/vod",
+      "link": "https://api.douapi.cc",
+      "source_url": "https://www.ziyuanzu.com/source/doudouziyuanzhan",
+      "status": "在线",
+      "status_code": 403,
+      "response_ms": 111.36,
+      "rating": 4,
+      "speed": "medium",
+      "resource_count": 54823,
+      "today_updates": 20,
+      "tags": [
+        "成人",
+        "采集站"
+      ],
+      "description": "豆豆资源采集站"
+    },
+    {
       "name": "滴滴资源站",
       "api": "https://api.ddapi.cc/api.php/provide/vod/",
       "link": "https://api.ddapi.cc",
       "source_url": "https://www.ziyuanzu.com/source/didiziyuanzhan",
       "status": "在线",
       "status_code": 403,
-      "response_ms": 144.13,
+      "response_ms": 130.13,
       "rating": 4,
       "speed": "fast",
       "resource_count": 44118,
@@ -89,7 +145,7 @@
       "source_url": "https://www.ziyuanzu.com/source/wujinziyuanzhan",
       "status": "在线",
       "status_code": 403,
-      "response_ms": 145.72,
+      "response_ms": 140.69,
       "rating": 4.5,
       "speed": "fast",
       "resource_count": 118487,
@@ -102,107 +158,13 @@
       "description": "无尽资源采集站，资源丰富稳定"
     },
     {
-      "name": "豆豆资源站",
-      "api": "https://api.douapi.cc/api.php/provide/vod",
-      "link": "https://api.douapi.cc",
-      "source_url": "https://www.ziyuanzu.com/source/doudouziyuanzhan",
-      "status": "在线",
-      "status_code": 403,
-      "response_ms": 156.59,
-      "rating": 4,
-      "speed": "medium",
-      "resource_count": 54823,
-      "today_updates": 20,
-      "tags": [
-        "成人",
-        "采集站"
-      ],
-      "description": "豆豆资源采集站"
-    },
-    {
-      "name": "黄色仓库资源",
-      "api": "https://hsckzy888.com/api.php/provide/vod",
-      "link": "https://hsckzy888.com",
-      "source_url": "https://www.ziyuanzu.com/source/huangsecangkuziyuan",
-      "status": "在线",
-      "status_code": 200,
-      "response_ms": 184.99,
-      "rating": 4.2,
-      "speed": "fast",
-      "resource_count": 64442,
-      "today_updates": 20,
-      "tags": [
-        "热门",
-        "精品",
-        "稳定"
-      ],
-      "description": "黄色仓库资源采集站，提供影视资源API接口"
-    },
-    {
-      "name": "最大资源站",
-      "api": "http://zuidazy.me/api.php/provide/vod/",
-      "link": "http://zuidazy.me",
-      "source_url": "https://www.ziyuanzu.com/source/zuidaziyuanzhan",
-      "status": "在线",
-      "status_code": 200,
-      "response_ms": 232.09,
-      "rating": 4.5,
-      "speed": "fast",
-      "resource_count": 122136,
-      "today_updates": 5,
-      "tags": [
-        "资源量大",
-        "老牌",
-        "稳定"
-      ],
-      "description": "最大资源采集站，资源量最大"
-    },
-    {
-      "name": "湿乐园资源站",
-      "api": "https://xxavs.com/api.php/provide/vod/",
-      "link": "https://xxavs.com",
-      "source_url": "https://www.ziyuanzu.com/source/shileyuanziyuanzhan",
-      "status": "在线",
-      "status_code": 200,
-      "response_ms": 237.92,
-      "rating": 4.1,
-      "speed": "medium",
-      "resource_count": 220238,
-      "today_updates": 2,
-      "tags": [
-        "综合",
-        "高清",
-        "热门"
-      ],
-      "description": "湿乐园采集站，提供影视资源API接口"
-    },
-    {
-      "name": "极速资源站",
-      "api": "https://jszyapi.com/api.php/provide/vod/",
-      "link": "https://jszyapi.com",
-      "source_url": "https://www.ziyuanzu.com/source/jisuziyuanzhan",
-      "status": "在线",
-      "status_code": 200,
-      "response_ms": 257.6,
-      "rating": 4.4,
-      "speed": "fast",
-      "resource_count": 109145,
-      "today_updates": 16,
-      "tags": [
-        "极速",
-        "JSON",
-        "采集站"
-      ],
-      "description": "极速资源采集站，JSON接口"
-    },
-    {
       "name": "光速资源站",
       "api": "https://api.guangsuapi.com/api.php/provide/vod/",
       "link": "https://api.guangsuapi.com",
       "source_url": "https://www.ziyuanzu.com/source/guangsuziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 263.93,
+      "response_ms": 165.89,
       "rating": 4.3,
       "speed": "fast",
       "resource_count": 110878,
@@ -215,13 +177,32 @@
       "description": "光速加载资源站，m3u8直链"
     },
     {
+      "name": "最大资源站",
+      "api": "http://zuidazy.me/api.php/provide/vod/",
+      "link": "http://zuidazy.me",
+      "source_url": "https://www.ziyuanzu.com/source/zuidaziyuanzhan",
+      "status": "在线",
+      "status_code": 200,
+      "response_ms": 185.69,
+      "rating": 4.5,
+      "speed": "fast",
+      "resource_count": 122136,
+      "today_updates": 5,
+      "tags": [
+        "资源量大",
+        "老牌",
+        "稳定"
+      ],
+      "description": "最大资源采集站，资源量最大"
+    },
+    {
       "name": "黄av资源站",
       "api": "https://www.pgxdy.com/api/json.php",
       "link": "https://www.pgxdy.com",
       "source_url": "https://www.ziyuanzu.com/source/huangavziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 282.68,
+      "response_ms": 228.77,
       "rating": 4,
       "speed": "slow",
       "resource_count": 23625,
@@ -233,32 +214,13 @@
       "description": "黄av资源采集站"
     },
     {
-      "name": "大X子资源站",
-      "api": "https://apidanaizi.com/api.php/provide/vod/",
-      "link": "https://apidanaizi.com",
-      "source_url": "https://www.ziyuanzu.com/source/daxziziyuanzhan",
-      "status": "在线",
-      "status_code": 200,
-      "response_ms": 287.1,
-      "rating": 4.4,
-      "speed": "medium",
-      "resource_count": 127826,
-      "today_updates": 20,
-      "tags": [
-        "影视资源",
-        "API",
-        "采集站"
-      ],
-      "description": "大X子资源采集站，提供影视资源API接口"
-    },
-    {
       "name": "鸭鸭资源站",
       "api": "https://cj.yayazy.net/api.php/provide/vod/",
       "link": "https://cj.yayazy.net",
       "source_url": "https://www.ziyuanzu.com/source/yayaziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 295.31,
+      "response_ms": 237.35,
       "rating": 4.4,
       "speed": "fast",
       "resource_count": 120171,
@@ -271,22 +233,61 @@
       "description": "丫丫资源采集站，资源丰富稳定"
     },
     {
-      "name": "香X儿资源站",
-      "api": "https://www.gdlsp.com/api/json.php",
-      "link": "https://www.gdlsp.com",
-      "source_url": "https://www.ziyuanzu.com/source/xiangxerziyuanzhan",
+      "name": "大X子资源站",
+      "api": "https://apidanaizi.com/api.php/provide/vod/",
+      "link": "https://apidanaizi.com",
+      "source_url": "https://www.ziyuanzu.com/source/daxziziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 311.02,
-      "rating": 4,
-      "speed": "slow",
-      "resource_count": 23787,
-      "today_updates": 12,
+      "response_ms": 252.95,
+      "rating": 4.4,
+      "speed": "medium",
+      "resource_count": 127826,
+      "today_updates": 20,
       "tags": [
-        "成人",
+        "影视资源",
+        "API",
         "采集站"
       ],
-      "description": "香X儿资源采集站"
+      "description": "大X子资源采集站，提供影视资源API接口"
+    },
+    {
+      "name": "极速资源站",
+      "api": "https://jszyapi.com/api.php/provide/vod/",
+      "link": "https://jszyapi.com",
+      "source_url": "https://www.ziyuanzu.com/source/jisuziyuanzhan",
+      "status": "在线",
+      "status_code": 200,
+      "response_ms": 254.91,
+      "rating": 4.4,
+      "speed": "fast",
+      "resource_count": 109145,
+      "today_updates": 16,
+      "tags": [
+        "极速",
+        "JSON",
+        "采集站"
+      ],
+      "description": "极速资源采集站，JSON接口"
+    },
+    {
+      "name": "麻豆资源站",
+      "api": "https://91md.me/api.php/provide/vod/",
+      "link": "https://91md.me",
+      "source_url": "https://www.ziyuanzu.com/source/madouziyuanzhan",
+      "status": "在线",
+      "status_code": 200,
+      "response_ms": 279.07,
+      "rating": 4.2,
+      "speed": "medium",
+      "resource_count": 37495,
+      "today_updates": 25,
+      "tags": [
+        "精品",
+        "稳定",
+        "影视资源"
+      ],
+      "description": "麻豆资源采集站，提供影视资源API接口"
     },
     {
       "name": "X水机资源站",
@@ -295,7 +296,7 @@
       "source_url": "https://www.ziyuanzu.com/source/xshuijiziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 320.43,
+      "response_ms": 279.83,
       "rating": 4,
       "speed": "slow",
       "resource_count": 23465,
@@ -313,7 +314,7 @@
       "source_url": "https://www.ziyuanzu.com/source/yinghuaziyuanzhan",
       "status": "在线",
       "status_code": 500,
-      "response_ms": 332.97,
+      "response_ms": 283.88,
       "rating": 4.4,
       "speed": "medium",
       "resource_count": 102002,
@@ -326,13 +327,50 @@
       "description": "樱花资源采集站，提供影视资源API接口"
     },
     {
+      "name": "美少女资源站",
+      "api": "https://www.msnii.com/api/json.php",
+      "link": "https://www.msnii.com",
+      "source_url": "https://www.ziyuanzu.com/source/meishaonvziyuanzhan",
+      "status": "在线",
+      "status_code": 200,
+      "response_ms": 286.0,
+      "rating": 4,
+      "speed": "slow",
+      "resource_count": 24752,
+      "today_updates": 12,
+      "tags": [
+        "成人",
+        "采集站"
+      ],
+      "description": "美少女资源采集站"
+    },
+    {
+      "name": "湿乐园资源站",
+      "api": "https://xxavs.com/api.php/provide/vod/",
+      "link": "https://xxavs.com",
+      "source_url": "https://www.ziyuanzu.com/source/shileyuanziyuanzhan",
+      "status": "在线",
+      "status_code": 200,
+      "response_ms": 299.92,
+      "rating": 4.1,
+      "speed": "medium",
+      "resource_count": 220238,
+      "today_updates": 2,
+      "tags": [
+        "综合",
+        "高清",
+        "热门"
+      ],
+      "description": "湿乐园采集站，提供影视资源API接口"
+    },
+    {
       "name": "红牛资源站",
       "api": "http://hongniuzy2.com/api.php/provide/vod/",
       "link": "http://hongniuzy2.com",
       "source_url": "https://www.ziyuanzu.com/source/hongniuziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 340.6,
+      "response_ms": 322.09,
       "rating": 4.5,
       "speed": "medium",
       "resource_count": 110302,
@@ -345,59 +383,23 @@
       "description": "红牛资源采集站，m3u8直链，老牌稳定"
     },
     {
-      "name": "白嫖资源站",
-      "api": "https://www.kxgav.com/api/json.php",
-      "link": "https://www.kxgav.com",
-      "source_url": "https://www.ziyuanzu.com/source/baipiaoziyuanzhan",
+      "name": "森林资源站",
+      "api": "https://slapibf.com/api.php/provide/vod/",
+      "link": "https://slapibf.com",
+      "source_url": "https://www.ziyuanzu.com/source/senlinziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 342.46,
-      "rating": 4,
-      "speed": "slow",
-      "resource_count": 23459,
-      "today_updates": 12,
-      "tags": [
-        "成人",
-        "采集站"
-      ],
-      "description": "白嫖资源采集站"
-    },
-    {
-      "name": "美少女资源站",
-      "api": "https://www.msnii.com/api/json.php",
-      "link": "https://www.msnii.com",
-      "source_url": "https://www.ziyuanzu.com/source/meishaonvziyuanzhan",
-      "status": "在线",
-      "status_code": 200,
-      "response_ms": 348.32,
-      "rating": 4,
-      "speed": "slow",
-      "resource_count": 24752,
-      "today_updates": 12,
-      "tags": [
-        "成人",
-        "采集站"
-      ],
-      "description": "美少女资源采集站"
-    },
-    {
-      "name": "虎牙资源站",
-      "api": "https://huyazy.net/api.php/provide/vod/",
-      "link": "https://huyazy.net",
-      "source_url": "https://www.ziyuanzu.com/source/huyaziyuanzhan",
-      "status": "在线",
-      "status_code": 200,
-      "response_ms": 351.24,
-      "rating": 4.4,
+      "response_ms": 335.04,
+      "rating": 4.3,
       "speed": "medium",
-      "resource_count": 109818,
-      "today_updates": 17,
+      "resource_count": 251456,
+      "today_updates": 20,
       "tags": [
-        "资源丰富",
-        "稳定",
-        "采集站"
+        "综合",
+        "影视资源",
+        "热门"
       ],
-      "description": "虎牙资源采集站，资源丰富"
+      "description": "森林资源采集站，提供影视资源API接口"
     },
     {
       "name": "色猫资源站",
@@ -406,7 +408,7 @@
       "source_url": "https://www.ziyuanzu.com/source/semaoziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 372.97,
+      "response_ms": 356.78,
       "rating": 4.2,
       "speed": "fast",
       "resource_count": 50000,
@@ -425,7 +427,7 @@
       "source_url": "https://www.ziyuanzu.com/source/aosikaziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 431.49,
+      "response_ms": 358.18,
       "rating": 4.2,
       "speed": "medium",
       "resource_count": 212318,
@@ -438,80 +440,23 @@
       "description": "奥斯卡资源采集站，提供影视资源API接口"
     },
     {
-      "name": "小鸡资源站",
-      "api": "https://api.xiaojizy.live/provide/vod/",
-      "link": "https://api.xiaojizy.live",
-      "source_url": "https://www.ziyuanzu.com/source/xiaojiziyuanzhan",
+      "name": "豪华资源站",
+      "api": "https://haohuazy.com/api.php/provide/vod/",
+      "link": "https://haohuazy.com",
+      "source_url": "https://www.ziyuanzu.com/source/haohuaziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 465.13,
-      "rating": 4.1,
+      "response_ms": 365.56,
+      "rating": 4.5,
       "speed": "medium",
-      "resource_count": 80640,
-      "today_updates": 20,
+      "resource_count": 109913,
+      "today_updates": 17,
       "tags": [
-        "稳定",
-        "综合",
-        "极速"
-      ],
-      "description": "小鸡资源采集站，提供影视资源API接口"
-    },
-    {
-      "name": "森林资源站",
-      "api": "https://slapibf.com/api.php/provide/vod/",
-      "link": "https://slapibf.com",
-      "source_url": "https://www.ziyuanzu.com/source/senlinziyuanzhan",
-      "status": "在线",
-      "status_code": 200,
-      "response_ms": 491.13,
-      "rating": 4.3,
-      "speed": "medium",
-      "resource_count": 251456,
-      "today_updates": 20,
-      "tags": [
-        "综合",
-        "影视资源",
-        "热门"
-      ],
-      "description": "森林资源采集站，提供影视资源API接口"
-    },
-    {
-      "name": "天涯影视资源站",
-      "api": "https://tyyszyapi.com/api.php/provide/vod/",
-      "link": "https://tyyszyapi.com",
-      "source_url": "https://www.ziyuanzu.com/source/tianyayingshiziyuanzhan",
-      "status": "在线",
-      "status_code": 200,
-      "response_ms": 503.87,
-      "rating": 4.4,
-      "speed": "fast",
-      "resource_count": 69330,
-      "today_updates": 13,
-      "tags": [
-        "稳定",
-        "影视资源",
+        "无广告",
+        "无水印",
         "采集站"
       ],
-      "description": "天涯影视资源采集站，稳定可靠"
-    },
-    {
-      "name": "百度云资源站",
-      "api": "https://api.apibdzy.com/api.php/provide/vod",
-      "link": "https://api.apibdzy.com",
-      "source_url": "https://www.ziyuanzu.com/source/baiduyunziyuanzhan",
-      "status": "在线",
-      "status_code": 200,
-      "response_ms": 514.2,
-      "rating": 4.3,
-      "speed": "slow",
-      "resource_count": 48126,
-      "today_updates": 3,
-      "tags": [
-        "资源丰富",
-        "稳定",
-        "采集站"
-      ],
-      "description": "百度云资源采集站，资源丰富稳定"
+      "description": "豪华资源采集站，无广告无水印"
     },
     {
       "name": "爱坤资源站",
@@ -520,7 +465,7 @@
       "source_url": "https://www.ziyuanzu.com/source/aikunziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 529.45,
+      "response_ms": 420.11,
       "rating": 4,
       "speed": "medium",
       "resource_count": 66683,
@@ -533,13 +478,32 @@
       "description": "爱坤资源采集站，提供影视资源API接口"
     },
     {
+      "name": "玉兔资源站",
+      "api": "https://apiyutu.com/api.php/provide/vod/",
+      "link": "https://apiyutu.com",
+      "source_url": "https://www.ziyuanzu.com/source/yutuziyuanzhan",
+      "status": "在线",
+      "status_code": 200,
+      "response_ms": 422.0,
+      "rating": 4.2,
+      "speed": "fast",
+      "resource_count": 209913,
+      "today_updates": 10,
+      "tags": [
+        "影视资源",
+        "API",
+        "高清"
+      ],
+      "description": "玉兔资源采集站，提供影视资源API接口"
+    },
+    {
       "name": "杏吧资源站",
       "api": "https://json.xingba222.com/api.php/provide/vod",
       "link": "https://json.xingba222.com",
       "source_url": "https://www.ziyuanzu.com/source/xingbaziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 530.17,
+      "response_ms": 425.73,
       "rating": 4,
       "speed": "medium",
       "resource_count": 109311,
@@ -552,13 +516,51 @@
       "description": "杏吧资源采集站，提供影视资源API接口"
     },
     {
+      "name": "百度云资源站",
+      "api": "https://api.apibdzy.com/api.php/provide/vod",
+      "link": "https://api.apibdzy.com",
+      "source_url": "https://www.ziyuanzu.com/source/baiduyunziyuanzhan",
+      "status": "在线",
+      "status_code": 200,
+      "response_ms": 430.39,
+      "rating": 4.3,
+      "speed": "slow",
+      "resource_count": 48126,
+      "today_updates": 3,
+      "tags": [
+        "资源丰富",
+        "稳定",
+        "采集站"
+      ],
+      "description": "百度云资源采集站，资源丰富稳定"
+    },
+    {
+      "name": "天涯影视资源站",
+      "api": "https://tyyszyapi.com/api.php/provide/vod/",
+      "link": "https://tyyszyapi.com",
+      "source_url": "https://www.ziyuanzu.com/source/tianyayingshiziyuanzhan",
+      "status": "在线",
+      "status_code": 200,
+      "response_ms": 448.05,
+      "rating": 4.4,
+      "speed": "fast",
+      "resource_count": 69330,
+      "today_updates": 13,
+      "tags": [
+        "稳定",
+        "影视资源",
+        "采集站"
+      ],
+      "description": "天涯影视资源采集站，稳定可靠"
+    },
+    {
       "name": "牛牛资源",
       "api": "https://api.niuniuzy.me/api.php/provide/vod/",
       "link": "https://api.niuniuzy.me",
       "source_url": "https://www.ziyuanzu.com/source/niuniuziyuan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 531.06,
+      "response_ms": 450.85,
       "rating": 4.5,
       "speed": "medium",
       "resource_count": 122131,
@@ -571,13 +573,51 @@
       "description": "牛牛资源采集站，稳定高速"
     },
     {
+      "name": "乐播资源站",
+      "api": "https://lbapi9.com/api.php/provide/vod/",
+      "link": "https://lbapi9.com",
+      "source_url": "https://www.ziyuanzu.com/source/leboziyuanzhan",
+      "status": "在线",
+      "status_code": 200,
+      "response_ms": 483.22,
+      "rating": 4.2,
+      "speed": "medium",
+      "resource_count": 326862,
+      "today_updates": 20,
+      "tags": [
+        "综合",
+        "API",
+        "稳定"
+      ],
+      "description": "乐播资源采集站，提供影视资源API接口"
+    },
+    {
+      "name": "索尼采集站",
+      "api": "https://suonizy.net/api.php/provide/vod/",
+      "link": "https://suonizy.net",
+      "source_url": "https://www.ziyuanzu.com/source/suonicaijizhan",
+      "status": "在线",
+      "status_code": 200,
+      "response_ms": 523.34,
+      "rating": 4.4,
+      "speed": "medium",
+      "resource_count": 142917,
+      "today_updates": 20,
+      "tags": [
+        "资源丰富",
+        "稳定",
+        "采集站"
+      ],
+      "description": "索尼采集站，资源丰富稳定"
+    },
+    {
       "name": "JKUN资源站",
       "api": "https://jkunzyapi.com/api.php/provide/vod",
       "link": "https://jkunzyapi.com",
       "source_url": "https://www.ziyuanzu.com/source/jkunziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 558.08,
+      "response_ms": 529.49,
       "rating": 4.4,
       "speed": "medium",
       "resource_count": 129699,
@@ -596,7 +636,7 @@
       "source_url": "https://www.ziyuanzu.com/source/xinjipinziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 577.07,
+      "response_ms": 567.12,
       "rating": 4.8,
       "speed": "medium",
       "resource_count": 56144,
@@ -610,32 +650,13 @@
       "description": "新极品资源采集站，无广告无水印秒播"
     },
     {
-      "name": "155资源站",
-      "api": "https://155api.com/api.php/provide/vod",
-      "link": "https://155api.com",
-      "source_url": "https://www.ziyuanzu.com/source/155ziyuanzhan",
-      "status": "在线",
-      "status_code": 200,
-      "response_ms": 598.16,
-      "rating": 4.3,
-      "speed": "medium",
-      "resource_count": 183497,
-      "today_updates": 20,
-      "tags": [
-        "高清",
-        "API",
-        "极速"
-      ],
-      "description": "155资源采集站，提供影视资源API接口"
-    },
-    {
       "name": "老色X资源站",
       "api": "https://apilsbzy1.com/api.php/provide/vod/",
       "link": "https://apilsbzy1.com",
       "source_url": "https://www.ziyuanzu.com/source/laosexziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 598.52,
+      "response_ms": 587.69,
       "rating": 4.2,
       "speed": "fast",
       "resource_count": 209913,
@@ -648,61 +669,60 @@
       "description": "老色X资源采集站，提供影视资源API接口"
     },
     {
-      "name": "番号资源站",
-      "api": "http://fhapi9.com/api.php/provide/vod/",
-      "link": "http://fhapi9.com",
-      "source_url": "https://www.ziyuanzu.com/source/fanhaoziyuanzhan",
+      "name": "魔都资源站",
+      "api": "https://www.mdzyapi.com/api.php/provide/vod/",
+      "link": "https://www.mdzyapi.com",
+      "source_url": "https://www.ziyuanzu.com/source/modouziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 615.24,
-      "rating": 4.1,
-      "speed": "medium",
-      "resource_count": 228651,
-      "today_updates": 20,
+      "response_ms": 652.46,
+      "rating": 4.5,
+      "speed": "slow",
+      "resource_count": 87456,
+      "today_updates": 17,
       "tags": [
-        "综合",
-        "精品",
-        "极速"
-      ],
-      "description": "番号资源采集站，提供影视资源API接口"
-    },
-    {
-      "name": "猫眼资源",
-      "api": "https://api.maoyanapi.top/api.php/provide/vod",
-      "link": "https://api.maoyanapi.top",
-      "source_url": "https://www.ziyuanzu.com/source/maoyanziyuan",
-      "status": "在线",
-      "status_code": 200,
-      "response_ms": 743.59,
-      "rating": 4.4,
-      "speed": "medium",
-      "resource_count": 33824,
-      "today_updates": 30,
-      "tags": [
+        "资源丰富",
         "稳定",
-        "可靠",
         "采集站"
       ],
-      "description": "猫眼资源采集站，稳定可靠"
+      "description": "魔都资源采集站，资源丰富稳定"
     },
     {
-      "name": "玉兔资源站",
-      "api": "https://apiyutu.com/api.php/provide/vod/",
-      "link": "https://apiyutu.com",
-      "source_url": "https://www.ziyuanzu.com/source/yutuziyuanzhan",
+      "name": "香X儿资源站",
+      "api": "https://www.gdlsp.com/api/json.php",
+      "link": "https://www.gdlsp.com",
+      "source_url": "https://www.ziyuanzu.com/source/xiangxerziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 756.34,
-      "rating": 4.2,
-      "speed": "fast",
-      "resource_count": 209913,
-      "today_updates": 10,
+      "response_ms": 711.22,
+      "rating": 4,
+      "speed": "slow",
+      "resource_count": 23787,
+      "today_updates": 12,
       "tags": [
-        "影视资源",
-        "API",
-        "高清"
+        "成人",
+        "采集站"
       ],
-      "description": "玉兔资源采集站，提供影视资源API接口"
+      "description": "香X儿资源采集站"
+    },
+    {
+      "name": "越南资源站",
+      "api": "https://api.vnzyz.com/api.php/provide/vod/",
+      "link": "https://api.vnzyz.com",
+      "source_url": "https://www.ziyuanzu.com/source/yuenanziyuanzhan",
+      "status": "在线",
+      "status_code": 200,
+      "response_ms": 757.47,
+      "rating": 4.1,
+      "speed": "fast",
+      "resource_count": 13101,
+      "today_updates": 20,
+      "tags": [
+        "API",
+        "精品",
+        "新站"
+      ],
+      "description": "越南资源采集站，提供影视资源API接口"
     },
     {
       "name": "百花资源站",
@@ -711,7 +731,7 @@
       "source_url": "https://www.ziyuanzu.com/source/baihuaziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 798.79,
+      "response_ms": 787.5,
       "rating": 4.3,
       "speed": "medium",
       "resource_count": 11523,
@@ -724,13 +744,69 @@
       "description": "百花资源采集站，提供影视资源API接口"
     },
     {
+      "name": "白嫖资源站",
+      "api": "https://www.kxgav.com/api/json.php",
+      "link": "https://www.kxgav.com",
+      "source_url": "https://www.ziyuanzu.com/source/baipiaoziyuanzhan",
+      "status": "在线",
+      "status_code": 200,
+      "response_ms": 790.63,
+      "rating": 4,
+      "speed": "slow",
+      "resource_count": 23459,
+      "today_updates": 12,
+      "tags": [
+        "成人",
+        "采集站"
+      ],
+      "description": "白嫖资源采集站"
+    },
+    {
+      "name": "小鸡资源站",
+      "api": "https://api.xiaojizy.live/provide/vod/",
+      "link": "https://api.xiaojizy.live",
+      "source_url": "https://www.ziyuanzu.com/source/xiaojiziyuanzhan",
+      "status": "在线",
+      "status_code": 200,
+      "response_ms": 797.8,
+      "rating": 4.1,
+      "speed": "medium",
+      "resource_count": 80640,
+      "today_updates": 20,
+      "tags": [
+        "稳定",
+        "综合",
+        "极速"
+      ],
+      "description": "小鸡资源采集站，提供影视资源API接口"
+    },
+    {
+      "name": "黑料资源站",
+      "api": "https://heiliaozyapi.com/api.php/provide/vod",
+      "link": "https://heiliaozyapi.com",
+      "source_url": "https://www.ziyuanzu.com/source/heiliaoziyuanzhan",
+      "status": "在线",
+      "status_code": 500,
+      "response_ms": 806.22,
+      "rating": 4.4,
+      "speed": "medium",
+      "resource_count": 98780,
+      "today_updates": 50,
+      "tags": [
+        "采集站",
+        "API",
+        "高清"
+      ],
+      "description": "黑料资源采集站，提供影视资源API接口"
+    },
+    {
       "name": "精品X资源站",
       "api": "https://www.jingpinx.com/api.php/provide/vod",
       "link": "https://www.jingpinx.com",
       "source_url": "https://www.ziyuanzu.com/source/jingpinxziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 847.7,
+      "response_ms": 828.63,
       "rating": 4.4,
       "speed": "medium",
       "resource_count": 52951,
@@ -743,155 +819,23 @@
       "description": "精品X资源采集站，提供影视资源API接口"
     },
     {
-      "name": "搜av资源站",
-      "api": "https://api.souavzyw.net/api.php/provide/vod",
-      "link": "https://api.souavzyw.net",
-      "source_url": "https://www.ziyuanzu.com/source/souavziyuanzhan",
+      "name": "茅台资源站",
+      "api": "https://mtzy5.com/api.php/provide/vod/",
+      "link": "https://mtzy5.com",
+      "source_url": "https://www.ziyuanzu.com/source/maotaiziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 856.24,
-      "rating": 4,
-      "speed": "slow",
-      "resource_count": 125142,
+      "response_ms": 878.59,
+      "rating": 4.3,
+      "speed": "medium",
+      "resource_count": 141529,
       "today_updates": 20,
       "tags": [
-        "成人",
-        "采集站"
-      ],
-      "description": "搜av资源采集站"
-    },
-    {
-      "name": "豪华资源站",
-      "api": "https://haohuazy.com/api.php/provide/vod/",
-      "link": "https://haohuazy.com",
-      "source_url": "https://www.ziyuanzu.com/source/haohuaziyuanzhan",
-      "status": "在线",
-      "status_code": 200,
-      "response_ms": 873.27,
-      "rating": 4.5,
-      "speed": "medium",
-      "resource_count": 109913,
-      "today_updates": 17,
-      "tags": [
-        "无广告",
-        "无水印",
-        "采集站"
-      ],
-      "description": "豪华资源采集站，无广告无水印"
-    },
-    {
-      "name": "番茄资源站",
-      "api": "https://fqzy.me/api.php/provide/vod/",
-      "link": "https://fqzy.me",
-      "source_url": "https://www.ziyuanzu.com/source/fanjiaziyuanzhan",
-      "status": "在线",
-      "status_code": 200,
-      "response_ms": 890.39,
-      "rating": 4,
-      "speed": "medium",
-      "resource_count": 110645,
-      "today_updates": 20,
-      "tags": [
-        "影视资源",
-        "精品",
-        "极速"
-      ],
-      "description": "番茄资源采集站，提供影视资源API接口"
-    },
-    {
-      "name": "非凡资源站",
-      "api": "https://ffzy5.tv/api.php/provide/vod/",
-      "link": "https://ffzy5.tv",
-      "source_url": "https://www.ziyuanzu.com/source/feifanziyuanzhan",
-      "status": "在线",
-      "status_code": 200,
-      "response_ms": 901.71,
-      "rating": 4.4,
-      "speed": "medium",
-      "resource_count": 97851,
-      "today_updates": 12,
-      "tags": [
-        "JSON",
         "稳定",
+        "更新及时",
         "采集站"
       ],
-      "description": "非凡资源采集站，JSON接口"
-    },
-    {
-      "name": "索尼采集站",
-      "api": "https://suonizy.net/api.php/provide/vod/",
-      "link": "https://suonizy.net",
-      "source_url": "https://www.ziyuanzu.com/source/suonicaijizhan",
-      "status": "在线",
-      "status_code": 200,
-      "response_ms": 912.86,
-      "rating": 4.4,
-      "speed": "medium",
-      "resource_count": 142917,
-      "today_updates": 20,
-      "tags": [
-        "资源丰富",
-        "稳定",
-        "采集站"
-      ],
-      "description": "索尼采集站，资源丰富稳定"
-    },
-    {
-      "name": "鲨鱼资源站",
-      "api": "https://shayuapi.com/api.php/provide/vod/",
-      "link": "https://shayuapi.com",
-      "source_url": "https://www.ziyuanzu.com/source/shayuziyuanzhan",
-      "status": "在线",
-      "status_code": 200,
-      "response_ms": 920.39,
-      "rating": 4.4,
-      "speed": "medium",
-      "resource_count": 278130,
-      "today_updates": 20,
-      "tags": [
-        "影视资源",
-        "综合",
-        "新站"
-      ],
-      "description": "鲨鱼资源采集站，提供影视资源API接口"
-    },
-    {
-      "name": "乐播资源站",
-      "api": "https://lbapi9.com/api.php/provide/vod/",
-      "link": "https://lbapi9.com",
-      "source_url": "https://www.ziyuanzu.com/source/leboziyuanzhan",
-      "status": "在线",
-      "status_code": 200,
-      "response_ms": 931.6,
-      "rating": 4.2,
-      "speed": "medium",
-      "resource_count": 326862,
-      "today_updates": 20,
-      "tags": [
-        "综合",
-        "API",
-        "稳定"
-      ],
-      "description": "乐播资源采集站，提供影视资源API接口"
-    },
-    {
-      "name": "辣椒资源站",
-      "api": "https://apilj.com/api.php/provide/vod/",
-      "link": "https://apilj.com",
-      "source_url": "https://www.ziyuanzu.com/source/lajiaoziyuanzhan",
-      "status": "在线",
-      "status_code": 200,
-      "response_ms": 952.68,
-      "rating": 4.5,
-      "speed": "medium",
-      "resource_count": 223171,
-      "today_updates": 20,
-      "tags": [
-        "高清",
-        "采集站",
-        "影视资源"
-      ],
-      "description": "辣椒资源采集站，提供影视资源API接口"
+      "description": "茅台资源采集站，稳定更新"
     },
     {
       "name": "桃花资源站",
@@ -900,7 +844,7 @@
       "source_url": "https://www.ziyuanzu.com/source/taohuaziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 953.61,
+      "response_ms": 913.72,
       "rating": 4.2,
       "speed": "medium",
       "resource_count": 138381,
@@ -913,13 +857,50 @@
       "description": "桃花资源采集站，提供影视资源API接口"
     },
     {
+      "name": "番茄资源站",
+      "api": "https://fqzy.me/api.php/provide/vod/",
+      "link": "https://fqzy.me",
+      "source_url": "https://www.ziyuanzu.com/source/fanjiaziyuanzhan",
+      "status": "在线",
+      "status_code": 200,
+      "response_ms": 926.19,
+      "rating": 4,
+      "speed": "medium",
+      "resource_count": 110645,
+      "today_updates": 20,
+      "tags": [
+        "影视资源",
+        "精品",
+        "极速"
+      ],
+      "description": "番茄资源采集站，提供影视资源API接口"
+    },
+    {
+      "name": "搜av资源站",
+      "api": "https://api.souavzyw.net/api.php/provide/vod",
+      "link": "https://api.souavzyw.net",
+      "source_url": "https://www.ziyuanzu.com/source/souavziyuanzhan",
+      "status": "在线",
+      "status_code": 200,
+      "response_ms": 929.62,
+      "rating": 4,
+      "speed": "slow",
+      "resource_count": 125142,
+      "today_updates": 20,
+      "tags": [
+        "成人",
+        "采集站"
+      ],
+      "description": "搜av资源采集站"
+    },
+    {
       "name": "大地资源站",
       "api": "https://dadiapi.com/api.php",
       "link": "https://dadiapi.com",
       "source_url": "https://www.ziyuanzu.com/source/dadiziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 970.09,
+      "response_ms": 965.57,
       "rating": 4.1,
       "speed": "medium",
       "resource_count": 50000,
@@ -932,22 +913,23 @@
       "description": "大地资源采集站，提供影视资源API接口"
     },
     {
-      "name": "艾旦资源站",
-      "api": "https://lovedan.net/api.php/provide/vod",
-      "link": "https://lovedan.net",
-      "source_url": "https://www.ziyuanzu.com/source/aidanziyuanzhan",
+      "name": "鲨鱼资源站",
+      "api": "https://shayuapi.com/api.php/provide/vod/",
+      "link": "https://shayuapi.com",
+      "source_url": "https://www.ziyuanzu.com/source/shayuziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 1063.77,
-      "rating": 4.2,
-      "speed": "slow",
-      "resource_count": 178304,
-      "today_updates": 0,
+      "response_ms": 994.84,
+      "rating": 4.4,
+      "speed": "medium",
+      "resource_count": 278130,
+      "today_updates": 20,
       "tags": [
         "影视资源",
-        "采集站"
+        "综合",
+        "新站"
       ],
-      "description": "艾旦影视资源采集站，资源丰富"
+      "description": "鲨鱼资源采集站，提供影视资源API接口"
     },
     {
       "name": "暴风资源站",
@@ -956,7 +938,7 @@
       "source_url": "https://www.ziyuanzu.com/source/baofengziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 1152.19,
+      "response_ms": 1073.55,
       "rating": 4.6,
       "speed": "medium",
       "resource_count": 155982,
@@ -975,7 +957,7 @@
       "source_url": "https://www.ziyuanzu.com/source/naixiangxiangziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 1195.12,
+      "response_ms": 1268.11,
       "rating": 4.5,
       "speed": "medium",
       "resource_count": 175434,
@@ -988,61 +970,42 @@
       "description": "奶香香资源采集站，提供影视资源API接口"
     },
     {
-      "name": "魔都资源站",
-      "api": "https://www.mdzyapi.com/api.php/provide/vod/",
-      "link": "https://www.mdzyapi.com",
-      "source_url": "https://www.ziyuanzu.com/source/modouziyuanzhan",
+      "name": "番号资源站",
+      "api": "http://fhapi9.com/api.php/provide/vod/",
+      "link": "http://fhapi9.com",
+      "source_url": "https://www.ziyuanzu.com/source/fanhaoziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 1229.27,
-      "rating": 4.5,
-      "speed": "slow",
-      "resource_count": 87456,
-      "today_updates": 17,
-      "tags": [
-        "资源丰富",
-        "稳定",
-        "采集站"
-      ],
-      "description": "魔都资源采集站，资源丰富稳定"
-    },
-    {
-      "name": "越南资源站",
-      "api": "https://api.vnzyz.com/api.php/provide/vod/",
-      "link": "https://api.vnzyz.com",
-      "source_url": "https://www.ziyuanzu.com/source/yuenanziyuanzhan",
-      "status": "在线",
-      "status_code": 200,
-      "response_ms": 1239.0,
+      "response_ms": 1291.69,
       "rating": 4.1,
-      "speed": "fast",
-      "resource_count": 13101,
+      "speed": "medium",
+      "resource_count": 228651,
       "today_updates": 20,
       "tags": [
-        "API",
+        "综合",
         "精品",
-        "新站"
+        "极速"
       ],
-      "description": "越南资源采集站，提供影视资源API接口"
+      "description": "番号资源采集站，提供影视资源API接口"
     },
     {
-      "name": "茅台资源站",
-      "api": "https://mtzy5.com/api.php/provide/vod/",
-      "link": "https://mtzy5.com",
-      "source_url": "https://www.ziyuanzu.com/source/maotaiziyuanzhan",
+      "name": "非凡资源站",
+      "api": "https://ffzy5.tv/api.php/provide/vod/",
+      "link": "https://ffzy5.tv",
+      "source_url": "https://www.ziyuanzu.com/source/feifanziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 1288.67,
-      "rating": 4.3,
+      "response_ms": 1402.64,
+      "rating": 4.4,
       "speed": "medium",
-      "resource_count": 141529,
-      "today_updates": 20,
+      "resource_count": 97851,
+      "today_updates": 12,
       "tags": [
+        "JSON",
         "稳定",
-        "更新及时",
         "采集站"
       ],
-      "description": "茅台资源采集站，稳定更新"
+      "description": "非凡资源采集站，JSON接口"
     },
     {
       "name": "360资源站",
@@ -1051,7 +1014,7 @@
       "source_url": "https://www.ziyuanzu.com/source/360ziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 1330.79,
+      "response_ms": 1504.81,
       "rating": 4.5,
       "speed": "medium",
       "resource_count": 69275,
@@ -1064,32 +1027,13 @@
       "description": "360资源采集站，提供影视资源API接口"
     },
     {
-      "name": "麻豆资源站",
-      "api": "https://91md.me/api.php/provide/vod/",
-      "link": "https://91md.me",
-      "source_url": "https://www.ziyuanzu.com/source/madouziyuanzhan",
-      "status": "在线",
-      "status_code": 200,
-      "response_ms": 1369.71,
-      "rating": 4.2,
-      "speed": "medium",
-      "resource_count": 37495,
-      "today_updates": 25,
-      "tags": [
-        "精品",
-        "稳定",
-        "影视资源"
-      ],
-      "description": "麻豆资源采集站，提供影视资源API接口"
-    },
-    {
       "name": "爱奇艺资源站",
       "api": "https://iqiyizyapi.com/api.php/provide/vod",
       "link": "https://iqiyizyapi.com",
       "source_url": "https://www.ziyuanzu.com/source/aiqiyiziyuanzhan",
       "status": "在线",
       "status_code": 200,
-      "response_ms": 1551.93,
+      "response_ms": 1731.62,
       "rating": 4.4,
       "speed": "medium",
       "resource_count": 66369,
@@ -1100,6 +1044,63 @@
         "采集站"
       ],
       "description": "爱奇艺资源采集站，资源丰富"
+    },
+    {
+      "name": "猫眼资源",
+      "api": "https://api.maoyanapi.top/api.php/provide/vod",
+      "link": "https://api.maoyanapi.top",
+      "source_url": "https://www.ziyuanzu.com/source/maoyanziyuan",
+      "status": "在线",
+      "status_code": 200,
+      "response_ms": 1895.97,
+      "rating": 4.4,
+      "speed": "medium",
+      "resource_count": 33824,
+      "today_updates": 30,
+      "tags": [
+        "稳定",
+        "可靠",
+        "采集站"
+      ],
+      "description": "猫眼资源采集站，稳定可靠"
+    },
+    {
+      "name": "辣椒资源站",
+      "api": "https://apilj.com/api.php/provide/vod/",
+      "link": "https://apilj.com",
+      "source_url": "https://www.ziyuanzu.com/source/lajiaoziyuanzhan",
+      "status": "在线",
+      "status_code": 200,
+      "response_ms": 3633.18,
+      "rating": 4.5,
+      "speed": "medium",
+      "resource_count": 223171,
+      "today_updates": 20,
+      "tags": [
+        "高清",
+        "采集站",
+        "影视资源"
+      ],
+      "description": "辣椒资源采集站，提供影视资源API接口"
+    },
+    {
+      "name": "虎牙资源站",
+      "api": "https://huyazy.net/api.php/provide/vod/",
+      "link": "https://huyazy.net",
+      "source_url": "https://www.ziyuanzu.com/source/huyaziyuanzhan",
+      "status": "在线",
+      "status_code": 200,
+      "response_ms": 9579.27,
+      "rating": 4.4,
+      "speed": "medium",
+      "resource_count": 109818,
+      "today_updates": 17,
+      "tags": [
+        "资源丰富",
+        "稳定",
+        "采集站"
+      ],
+      "description": "虎牙资源采集站，资源丰富"
     },
     {
       "name": "细胞网资源站",
@@ -1119,25 +1120,6 @@
         "新站"
       ],
       "description": "细胞网资源采集站，提供影视资源API接口"
-    },
-    {
-      "name": "黑料资源站",
-      "api": "https://heiliaozyapi.com/api.php/provide/vod",
-      "link": "https://heiliaozyapi.com",
-      "source_url": "https://www.ziyuanzu.com/source/heiliaoziyuanzhan",
-      "status": "在线",
-      "status_code": null,
-      "response_ms": null,
-      "rating": 4.4,
-      "speed": "medium",
-      "resource_count": 98780,
-      "today_updates": 50,
-      "tags": [
-        "采集站",
-        "API",
-        "高清"
-      ],
-      "description": "黑料资源采集站，提供影视资源API接口"
     },
     {
       "name": "豆瓣资源站",
@@ -1176,6 +1158,24 @@
         "高清"
       ],
       "description": "香蕉资源采集站，提供影视资源API接口"
+    },
+    {
+      "name": "艾旦资源站",
+      "api": "https://lovedan.net/api.php/provide/vod",
+      "link": "https://lovedan.net",
+      "source_url": "https://www.ziyuanzu.com/source/aidanziyuanzhan",
+      "status": "在线",
+      "status_code": null,
+      "response_ms": null,
+      "rating": 4.2,
+      "speed": "slow",
+      "resource_count": 178304,
+      "today_updates": 0,
+      "tags": [
+        "影视资源",
+        "采集站"
+      ],
+      "description": "艾旦影视资源采集站，资源丰富"
     },
     {
       "name": "ok资源站",
